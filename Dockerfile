@@ -1,5 +1,8 @@
 FROM node:24-alpine
 
+ARG VITE_API_URL
+ENV VITE_API_URL=$VITE_API_URL
+
 WORKDIR /pong/front
 
 COPY package.json .
