@@ -16,8 +16,10 @@ jobs:
         uses: actions/setup-node@v6.1.0
         with:
           cache: npm
-          
-      - name: Run backend tests
+      - name: Install packages
+        run: npm i
+
+      - name: Run frontend tests
         run: npm run test
   test-and-deploy:
     runs-on: ubuntu-latest
