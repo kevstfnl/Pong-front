@@ -24,6 +24,3 @@ dist-ssr
 *.sw?
 
 .env
-Dockerfile
-Dockerfile.dev
-Dockerfile.render
