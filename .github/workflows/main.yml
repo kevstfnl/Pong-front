@@ -5,6 +5,20 @@ on:
   pull_request:
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout backend
+        uses: actions/checkout@v6.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@v6.1.0
+        with:
+          cache: npm
+          
+      - name: Run backend tests
+        run: npm run test
   test-and-deploy:
     runs-on: ubuntu-latest
 
