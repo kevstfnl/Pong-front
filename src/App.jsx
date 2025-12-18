@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <nav className="bg-blue-700 text-white px-4 py-2 flex gap-4 items-center">
-      <Link to="/" className="font-bold text-lg">🏓 Pongistes</Link>
+      <Link to="/" className="font-bold text-lg">🏓 Pongistes yolo</Link>
       <Link to="/dashboard" className="hover:underline">Dashboard</Link>
       <Link to="/create-ad" className="hover:underline">Créer une annonce</Link>
       {user && (
